@@ -1,6 +1,6 @@
 #####################################################################
-#########    Data Exploration in  Ecotoxicogenomics         #########
-#########    - how to work with toxiconomical data?         #########
+#  Data Exploration in  Ecotoxicogenomics
+#  - how to work with toxiconomical data? 
 #####################################################################
 
 #Purpose of my report is to give an introduction to the field of toxico- and ecotoxicogenomics, 
@@ -24,11 +24,11 @@
 #Getting data straight from the database from the web using data.table package and 
 #function fread() 
 #CEBS file orientation:
-#KEYS FILE =   has definitions for all the abbreviations used for assay name 
+#KEYS FILE = has definitions for all the abbreviations used for assay name 
 #column headers in the zip and sample files.
-#SAMPLE FILE: has 20 records in a tab delineated text file and gives a preview 
+#SAMPLE FILE = has 20 records in a tab delineated text file and gives a preview 
 #of the raw data contained in the zip file. 
-#ZIP FILE:    has all the raw data as a tab delineated text file
+#ZIP FILE = has all the raw data as a tab delineated text file
 
 ??data.table
 require(data.table)
@@ -57,10 +57,12 @@ setwd("C:/R files/DATA/celfiles")
 #Affymetrix's GeneChip arrays scan for the presence of particular genes in a biological sample. Within this area, 
 #Affymetrix is focused on oligonucleotide microarrays.  
 
-#Data from TG-GATE: 
-#substanse=ethanol 
+#Data from TG-GATE: (https://toxico.nibiohn.go.jp/open-tggates/english/compound_search/screen3/compound?compound_id=00137&design_name=Rat230_2&organ_id=ORGA0010&test_type=in+vitro)
+#substance=ethanol 
 #eperiment= rat in vitro 2h, 8h and 24h; control, low, middle and high dose groups, two samples of each group
-#For the full run of the script download the cel.file packages to your computer from github: 
+
+#NOTE! For the full run of the script download the cel.files from the link above or from github: https://github.com/hakkinenmiia/project1
+
 
 ### IMPORT .CEL FILE DATA ###
  

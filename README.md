@@ -77,6 +77,8 @@ data <- ReadAffy(celfile.path=celpath)
 dim(data)
 class(data)
 
+#How to retrieve intensities from affy?
+#These methods extract the intensities of all probes (both PM=perfect match and MM=mismatch probes) from the AffyBatch
 #Extract the matrix of expression values, which is in some sense 'the contents of a .cel file'.
 expr = exprs(data)
 #Function exprs= access the expression and error measurements of assay data stored in an object
